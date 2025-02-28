@@ -1,75 +1,78 @@
-<img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
+# Movie Mania - A Drupal-Based Movie Management System
 
-Drupal is an open source content management platform supporting a variety of
-websites ranging from personal weblogs to large community-driven websites. For
-more information, visit the Drupal website, [Drupal.org][Drupal.org], and join
-the [Drupal community][Drupal community].
+## 📌 Project Overview
+**Movie Mania** is a Drupal-based movie management system designed to fetch, store, and display movie data efficiently. This project demonstrates expertise in **Drupal module development**, **API integration**, **custom theming**, and **modern PHP development practices**.
 
-## Contributing
+## 🚀 Features
+- **Custom Theme (`movie_mania_theme`)** - A tailored Drupal theme for a modern and user-friendly experience.
+- **Custom Modules:**
+  - `best_movies` - Fetches movie data from an external API and stores it in a custom content type.
+  - `redirection` - Redirects users to the front page after login.
+- **Structured MVC Architecture** - Organizing controllers, models, and services for maintainability.
+- **Dependency Injection (DI)** - Improving testability and reusability by injecting dependencies where needed.
+- **Unit Testing (In Progress)** - Implementing tests for key components like `MovieModel`.
+- **AJAX-Based Filtering** - Users can filter movies dynamically via an AJAX-driven form.
 
-Drupal is developed on [Drupal.org][Drupal.org], the home of the international
-Drupal community since 2001!
+## 🛠️ Technologies Used
+- **Drupal** (CMS)
+- **PHP** (Object-Oriented Programming, MVC architecture)
+- **Composer** (Dependency Management)
+- **Guzzle HTTP Client** (API Integration)
+- **MySQL** (Database)
+- **Twig** (Templating Engine)
+- **AJAX** (Dynamic Filtering)
+- **Unit Testing (PHPUnit, Drupal Testing Framework)**
+- **Docker (DDEV)** - Local development environment
+- **Git & GitHub** (Version Control)
 
-[Drupal.org][Drupal.org] hosts Drupal's [GitLab repository][GitLab repository],
-its [issue queue][issue queue], and its [documentation][documentation]. Before
-you start working on code, be sure to search the [issue queue][issue queue] and
-create an issue if your aren't able to find an existing issue.
+## 📂 Project Structure
+```
+modules/custom/best_movies/  # Handles movie data fetching & storage
+modules/custom/redirection/   # Handles user redirection
+movie_mania_theme/           # Custom theme for frontend
+src/Model/MovieModel.php     # Handles database queries
+src/Form/FiltersForm.php     # Implements AJAX-based filtering
+src/Controller/MoviesController.php  # Controls movie data display
+```
 
-Every issue on Drupal.org automatically creates a new community-accessible fork
-that you can contribute to. Learn more about the code contribution process on
-the [Issue forks & merge requests page][issue forks].
+## 🚧 Setup & Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/movie-mania.git
+   ```
+2. Navigate to the project directory and start DDEV:
+   ```bash
+   cd movie-mania
+   ddev start
+   ```
+3. Install dependencies:
+   ```bash
+   composer install
+   ```
+4. Import database if needed:
+   ```bash
+   ddev import-db --src=final.sql.gz
+   ```
+5. Clear Drupal caches:
+   ```bash
+   drush cache:rebuild
+   ```
 
-## Usage
+## ✅ Running Unit Tests (In Progress)
+Once the unit tests are fully implemented:
+```bash
+phpunit --configuration core/phpunit.xml modules/custom/best_movies/tests/src/Unit
+```
 
-For a brief introduction, see [USAGE.txt](/core/USAGE.txt). You can also find
-guides, API references, and more by visiting Drupal's [documentation
-page][documentation].
+## 📌 Future Improvements
+- Complete PHPUnit test coverage
+- Implement advanced caching strategies
+- Enhance AJAX-based filtering with more parameters
+- Improve UI/UX with additional styling and animations
 
-You can quickly extend Drupal's core feature set by installing any of its
-[thousands of free and open source modules][modules]. With Drupal and its
-module ecosystem, you can often build most or all of what your project needs
-before writing a single line of code.
+## 🏆 About the Author
+This project is built and maintained by **Stefanos**, a Full-Stack Developer specializing in **Drupal, PHP, and modern web development techniques**. Passionate about **clean code, best practices, and performance optimization**.
 
-## Changelog
+---
+_This project serves as a professional showcase of my expertise in Drupal development. Feel free to explore, contribute, or reach out for collaboration!_ 😊
 
-Drupal keeps detailed [change records][changelog]. You can search Drupal's
-changes for a record of every notable breaking change and new feature since
-2011.
-
-## Security
-
-For a list of security announcements, see the [Security advisories
-page][Security advisories] (available as [an RSS feed][security RSS]). This
-page also describes how to subscribe to these announcements via email.
-
-For information about the Drupal security process, or to find out how to report
-a potential security issue to the Drupal security team, see the [Security team
-page][security team].
-
-## Need a helping hand?
-
-Visit the [Support page][support] or browse [over a thousand Drupal
-providers][service providers] offering design, strategy, development, and
-hosting services.
-
-## Legal matters
-
-Know your rights when using Drupal by reading Drupal core's
-[license](/core/LICENSE.txt).
-
-Learn about the [Drupal trademark and logo policy here][trademark].
-
-[Drupal.org]: https://www.drupal.org
-[Drupal community]: https://www.drupal.org/community
-[GitLab repository]: https://git.drupalcode.org/project/drupal
-[issue queue]: https://www.drupal.org/project/issues/drupal
-[issue forks]: https://www.drupal.org/drupalorg/docs/gitlab-integration/issue-forks-merge-requests
-[documentation]: https://www.drupal.org/documentation
-[changelog]: https://www.drupal.org/list-changes/drupal
-[modules]: https://www.drupal.org/project/project_module
-[security advisories]: https://www.drupal.org/security
-[security RSS]: https://www.drupal.org/security/rss.xml
-[security team]: https://www.drupal.org/drupal-security-team
-[service providers]: https://www.drupal.org/drupal-services
-[support]: https://www.drupal.org/support
-[trademark]: https://www.drupal.com/trademark
