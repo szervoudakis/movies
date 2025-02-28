@@ -1,0 +1,9 @@
+services:
+  best_movies.commands:
+    class: \Drupal\best_movies\Commands\BatchCommands
+    tags:
+      - { name: drush.command }
+
+  best_movies.movie_model:
+    class: Drupal\best_movies\Model\MovieModel
+    arguments: ['@database']
