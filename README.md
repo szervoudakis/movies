@@ -1,4 +1,4 @@
-# Movie Mania - A Drupal-Based Movie Management System
+# Moviemania - A Drupal-Based Movie Management System
 
 ## 📌 Project Overview
 **Movie Mania** is a Drupal-based movie management system designed to fetch, store, and display movie data efficiently. This project demonstrates expertise in **Drupal module development**, **API integration**, **custom theming**, and **modern PHP development practices**.
