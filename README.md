@@ -68,7 +68,7 @@ phpunit --configuration core/phpunit.xml modules/custom/best_movies/tests/src/Un
 - Complete PHPUnit test coverage
 - Implement advanced caching strategies
 - Enhance AJAX-based filtering with more parameters
-- Improve UI/UX with additional styling and animations
+- Implement React to the Front-end
 
 ## 🏆 About the Author
 This project is built and maintained by **Stefanos Zervoudakis**, a Full-Stack Developer specializing in **Drupal, PHP, and modern web development techniques**. Passionate about **clean code, best practices, and performance optimization**.
