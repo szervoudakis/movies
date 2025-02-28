@@ -71,8 +71,4 @@ phpunit --configuration core/phpunit.xml modules/custom/best_movies/tests/src/Un
 - Improve UI/UX with additional styling and animations
 
 ## 🏆 About the Author
-This project is built and maintained by **Stefanos**, a Full-Stack Developer specializing in **Drupal, PHP, and modern web development techniques**. Passionate about **clean code, best practices, and performance optimization**.
-
----
-_This project serves as a professional showcase of my expertise in Drupal development. Feel free to explore, contribute, or reach out for collaboration!_ 😊
-
+This project is built and maintained by **Stefanos Zervoudakis**, a Full-Stack Developer specializing in **Drupal, PHP, and modern web development techniques**. Passionate about **clean code, best practices, and performance optimization**.
